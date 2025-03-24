@@ -2,28 +2,16 @@
 <!doctype html>
 <html>
 <head>
-<!--
-	 Global site tag (gtag.js) - Google Analytics 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141762792-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-141762792-1');
-</script>
--->
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Junfeng Ni</title>
-<link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127775</text></svg>">
-<style type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junfeng Ni</title>
+  <link href="assets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127775</text></svg>">
+  <style type="text/css">
 </style>
 
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it. -->
+<!-- <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script> -->
 </head>
 
 <body alink = "#282727" vlink = "#9b9b9b" link = "#9b9b9b">
@@ -31,14 +19,14 @@
 <header>
   <div class="profilePhoto"> 
     <!-- Profile photo --> 
-    <img src="AboutPageAssets/images/profile_pic.jpeg" alt="sample" width="259"> </div>
+    <img src="assets/images/profile_pic.jpeg" alt="sample" width="259"> </div>
   <!-- Identity details -->
   <section class="profileHeader">
     <h1>Junfeng Ni (倪俊锋)</h1>
-    <h3>PhD Candidate</h3>
+    <h3>Ph.D Candidate</h3>
     <hr>
     <p>
-        Hello! I am a first-year Ph.D student in the Department of Automation, Tsinghua University, advised by <a href="http://web.cs.ucla.edu/~sczhu/" target="_blank">Prof. Song-Chun Zhu</a>.
+        Hello! I am a second-year Ph.D student in the Department of Automation, Tsinghua University, advised by <a href="http://web.cs.ucla.edu/~sczhu/" target="_blank">Prof. Song-Chun Zhu</a>.
         Before beginning my Ph.D study, I received my B.S. in the School of Electronic and Information Engineering, Beihang University</a>.
         I am also a research intern at Beijing Institute for General Artificial Intelligence(BIGAI)</a>, 
         supervised by <a href="https://yixchen.github.io/" target="_blank">Dr. Yixin Chen</a> and <a href="https://siyuanhuang.com/" target="_blank">Dr. Siyuan Huang</a>.
@@ -53,24 +41,19 @@
 	   <div class="socialNetworkNav"> 
       <!-- Add a Anchor tag with nested img tag here --> 
 		   <a href="mailto:njf23@mails.tsinghua.edu.cn">
-      <img src="AboutPageAssets/images/mail.png"  alt="sample" width="30" ></a> </div>
+      <img src="assets/images/mail.png"  alt="sample" width="30" ></a> </div>
       <div class="socialNetworkNav">
       <!-- Add a Anchor tag with nested img tag here --> 
 		<a href="https://github.com/DaLi-Jack" target="_blank">
-      <img src="AboutPageAssets/images/github.png" alt="sample" width="30"></a>  </div>
+      <img src="assets/images/github.png" alt="sample" width="30"></a>  </div>
     <div class="socialNetworkNav"> 
 		<a href="https://scholar.google.com/citations?user=zOoHsAcAAAAJ&hl=en" target="_blank">
       <!-- Add a Anchor tag with nested img tag here --> 
-      <img src="AboutPageAssets/images/scholar.jpg"  alt="sample" width="30"></a>  </div>
+      <img src="assets/images/scholar.jpg"  alt="sample" width="30"></a>  </div>
 	  	  <div class="socialNetworkNav">
       <!-- Add a Anchor tag with nested img tag here --> 
 		<a href="https://twitter.com/JunfengNi76790" target="_blank">
-      <img src="AboutPageAssets/images/twitt.png" alt="sample" width="30"></a>  </div>
-    <!-- -->
-    <div class="socialNetworkNav">
-        <a href="AboutPageAssets/images/my_wechat.jpeg" target="_blank">
-            <img src="AboutPageAssets/images/wechat.png"  alt="sample" width="30"> </a></div>
-
+      <img src="assets/images/twitt.png" alt="sample" width="30"></a>  </div>
   </aside>
 </header>
 <!-- content -->
@@ -85,53 +68,367 @@
 
     <hr class="sectionTitleRule2">
 
-    	<!-- SSR  -->
-	  <div onmouseout="msdf_stop()" onmouseover="msdf_start()">
+    <!-- TACO  -->
+	  <div onmouseout="taco_stop()" onmouseover="taco_start()">
 	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
 			  <div class="one">
-                <div class="two" id="msdf_image"><video  width="100%" height="100%" muted="" autoplay="" loop="">
-                <source src="AboutPageAssets/images/SSR.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src="AboutPageAssets/images/SSR.jpg" width="100%">
-              </div>
-              <script type="text/javascript">
-                function msdf_start() {
-                  document.getElementById('msdf_image').style.opacity = "1";
-                }
+          <div class="two" id="taco_image">
+            <!-- <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> -->
+            <img src="assets/images/taco.png" width="100%">
+          </div>
+          <img src="assets/images/taco.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function taco_start() {
+            document.getElementById('taco_image').style.opacity = "1";
+          }
 
-                function msdf_stop() {
-                  document.getElementById('msdf_image').style.opacity = "0";
-                }
-                msdf_stop()
-              </script>
+          function taco_stop() {
+            document.getElementById('taco_image').style.opacity = "0";
+          }
+          taco_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> TACO: Taming Diffusion for in-the-wild Video Amodal Completion </h2>
+        <br>
+        <h3 class="sectionContentSubTitle"> 
+          <h3 class="sectionContentSubTitle"> 
+            <a href="https://jason-aplp.github.io/Ruijie-Lu/" target="_blank">Ruijie Lu</a>,
+            <a href="https://yixchen.github.io/" target="_blank">Yixin Chen<sup>✉</sup></a>,
+            <a href="https://yuliu-ly.github.io/" target="_blank" class="nerf_authors_v2">Yu Liu</a>, 
+            <a href="https://me.kiui.moe/" target="_blank" class="nerf_authors_v2">Jiaxiang Tang</a>, 
+            <b>Junfeng Ni</b>, 
+            <a href="https://github.com/dnvtmf" target="_blank">Diwen Wan</a >,
+            <a href="https://www.cis.pku.edu.cn/info/1177/1378.htm" target="_blank">Gang Zeng<sup>✉</sup></a >,
+            <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang<sup>✉</sup></a >
+          </h3>		
+        <!-- <br> -->
+		  	<h3 class="sectionContentSubTitle"><em>arXiv 2025</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://jason-aplp.github.io/TACO/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Humans can infer complete shapes and appearances of objects from limited visual cues, relying on extensive prior knowledge of the physical world. 
+              However, completing partially observable objects while ensuring consistency across video frames remains challenging for existing models, especially for unstructured, in-the-wild videos. 
+              This paper tackles the task of Video Amodal Completion (VAC), which aims to generate the complete object consistently throughout the video given a visual prompt specifying the object of interest. 
+              Leveraging the rich, consistent manifolds learned by pre-trained video diffusion models, we propose a conditional diffusion model, TACO, that repurposes these manifolds for VAC. 
+              To enable its effective and robust generalization to challenging in-the-wild scenarios, we curate a large-scale synthetic dataset with multiple difficulty levels by systematically imposing occlusions onto un-occluded videos. 
+              Building on this, we devise a progressive fine-tuning paradigm that starts with simpler recovery tasks and gradually advances to more complex ones. 
+              We demonstrate TACO's versatility on a wide range of in-the-wild videos from Internet, as well as on diverse, unseen datasets commonly used in autonomous driving, robotic manipulation, and scene understanding. 
+              Moreover, we show that TACO can be effectively applied to various downstream tasks like object reconstruction and pose estimation, highlighting its potential to facilitate physical world understanding and reasoning.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2503.12049" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/Jason-aplp/TACO-code" target="_blank">Code</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end TACO -->
+
+    <!-- DP-Recon  -->
+	  <div onmouseout="dprecon_stop()" onmouseover="dprecon_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="dprecon_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/dprecon.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/dprecon.jpg" width="100%">
+        </div>
+        <script type="text/javascript">
+          function dprecon_start() {
+            document.getElementById('dprecon_image').style.opacity = "1";
+          }
+
+          function dprecon_stop() {
+            document.getElementById('dprecon_image').style.opacity = "0";
+          }
+          dprecon_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> Decompositional Neural Scene Reconstruction with Generative Diffusion Prior </h2>
+        <!-- <br> -->
+        <h3 class="sectionContentSubTitle"> 
+          <b>Junfeng Ni</b>, 
+          <a href="https://yuliu-ly.github.io/" target="_blank" class="nerf_authors_v2">Yu Liu</a>, 
+          <a href="https://jason-aplp.github.io/Ruijie-Lu/" target="_blank">Ruijie Lu</a>,
+          <a href="https://github.com/zr-zhou0o0" target="_blank">Zirui Zhou</a>,
+          <a href="https://zhusongchun.net/" target="_blank" class="nerf_authors_v2">Song-Chun Zhu</a>, 
+          <a href="https://yixchen.github.io/" target="_blank">Yixin Chen<sup>✉</sup></a>,
+          <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang<sup>✉</sup></a>
+        </h3>		
+		  	<h3 class="sectionContentSubTitle"><em>CVPR 2025</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://dp-recon.github.io/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Decompositional reconstruction of 3D scenes, with complete shapes and detailed texture of all objects within, is intriguing for downstream applications but remains challenging, particularly with sparse views as input. 
+              Recent approaches incorporate semantic or geometric regularization to address this issue, but they suffer significant degradation in underconstrained areas and fail to recover occluded regions. We argue that the key to solving this problem lies in supplementing missing information for these areas. 
+              To this end, we propose DP-Recon, which employs diffusion priors in the form of Score Distillation Sampling (SDS) to optimize the neural representation of each individual object under novel views. This provides additional information for the underconstrained areas, but directly incorporating diffusion prior raises potential conflicts between the reconstruction and generative guidance. 
+              Therefore, we further introduce a visibility-guided approach to dynamically adjust the per-pixel SDS loss weights. Together these components enhance both geometry and appearance recovery while remaining faithful to input images. 
+              Extensive experiments across Replica and ScanNet++ demonstrate that our method significantly outperforms SOTA methods. Notably, it achieves better object reconstruction under 10 views than the baselines under 100 views. 
+              Our method enables seamless text-based editing for geometry and appearance through SDS optimization and produces decomposed object meshes with detailed UV maps that support photorealistic Visual effects (VFX) editing.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2503.14830" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/DP-Recon/DP-Recon" target="_blank">Code</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end DP-Recon -->
+
+    <!-- MOVIS  -->
+	  <div onmouseout="movis_stop()" onmouseover="movis_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="movis_image">
+            <!-- <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> -->
+            <img src="assets/images/movis.png" width="100%">
+          </div>
+          <img src="assets/images/movis.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function movis_start() {
+            document.getElementById('movis_image').style.opacity = "1";
+          }
+
+          function movis_stop() {
+            document.getElementById('movis_image').style.opacity = "0";
+          }
+          movis_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> MOVIS: Enhancing Multi-Object Novel View Synthesis for Indoor Scenes </h2>
+        <!-- <br> -->
+        <h3 class="sectionContentSubTitle"> 
+          <a href="https://jason-aplp.github.io/Ruijie-Lu/" target="_blank">Ruijie Lu*</a>,
+          <a href="https://yixchen.github.io/" target="_blank">Yixin Chen*</a>,
+          <b>Junfeng Ni</b>, 
+          <a href="https://buzz-beater.github.io/" target="_blank">Baoxiong Jia</a >,
+          <a href="https://yuliu-ly.github.io/" target="_blank" class="nerf_authors_v2">Yu Liu</a>, 
+          <a href="https://github.com/dnvtmf" target="_blank">Diwen Wan</a >,
+          <a href="https://www.cis.pku.edu.cn/info/1177/1378.htm" target="_blank">Gang Zeng</a >,
+          <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a >
+        </h3>		
+		  	<h3 class="sectionContentSubTitle"><em>CVPR 2025</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://jason-aplp.github.io/MOVIS/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Repurposing pre-trained diffusion models has been proven to be effective for NVS. 
+              However, these methods are mostly limited to a single object; directly applying such methods to compositional multi-object scenarios yields inferior results, especially incorrect object placement and inconsistent shape and appearance under novel views. 
+              How to enhance and systematically evaluate the cross-view consistency of such models remains under-explored. 
+              To address this issue, we propose MOVIS to enhance the structural awareness of the view-conditioned diffusion model for multi-object NVS in terms of model inputs, auxiliary tasks, and training strategy. 
+              First, we inject structure-aware features, including depth and object mask, into the denoising U-Net to enhance the model's comprehension of object instances and their spatial relationships. 
+              Second, we introduce an auxiliary task requiring the model to simultaneously predict novel view object masks, further improving the model's capability in differentiating and placing objects. 
+              Finally, we conduct an in-depth analysis of the diffusion sampling process and carefully devise a structure-guided timestep sampling scheduler during training, which balances the learning of global object placement and fine-grained detail recovery. 
+              To systematically evaluate the plausibility of synthesized images, we propose to assess cross-view consistency and novel view object placement alongside existing image-level NVS metrics. 
+              Extensive experiments on challenging synthetic and realistic datasets demonstrate that our method exhibits strong generalization capabilities and produces consistent novel view synthesis, highlighting its potential to guide future 3D-aware multi-object NVS tasks.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2412.11457" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/Jason-aplp/MOVIS-code" target="_blank">Code</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end MOVIS -->
+
+    <!-- ArtGS  -->
+	  <div onmouseout="artgs_stop()" onmouseover="artgs_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="artgs_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/artgs.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/artgs.jpg" width="100%">
+        </div>
+        <script type="text/javascript">
+          function artgs_start() {
+            document.getElementById('artgs_image').style.opacity = "1";
+          }
+
+          function artgs_stop() {
+            document.getElementById('artgs_image').style.opacity = "0";
+          }
+          artgs_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> Building Interactable Replicas of Complex Articulated Objects via Gaussian Splatting </h2>
+        <h3 class="sectionContentSubTitle"> 
+          <a href="https://yuliu-ly.github.io/" target="_blank" class="nerf_authors_v2">Yu Liu*</a>, 
+          <a href="https://buzz-beater.github.io/" target="_blank" class="nerf_authors_v2">Baoxiong Jia*</a>, 
+          <a href="https://jason-aplp.github.io/Ruijie-Lu/" target="_blank" class="nerf_authors_v2">Ruijie Lu</a>, 
+          <b>Junfeng Ni</b>, 
+          <a href="https://zhusongchun.net/" target="_blank" class="nerf_authors_v2">Song-Chun Zhu</a>, 
+          <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang</a>
+        </h3>		
+		  	<h3 class="sectionContentSubTitle"><em>ICLR 2025</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://articulate-gs.github.io/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Building articulated objects is a key challenge in computer vision. 
+              Existing methods often fail to effectively integrate information across different object states, limiting the accuracy of part-mesh reconstruction and part dynamics modeling, particularly for complex multi-part articulated objects. 
+              We introduce ArtGS, a novel approach that leverages 3D Gaussians as a flexible and efficient representation to address these issues. 
+              Our method incorporates canonical Gaussians with coarse-to-fine initialization and updates for aligning articulated part information across different object states, and employs a skinning-inspired part dynamics modeling module to improve both part-mesh reconstruction and articulation learning. 
+              Extensive experiments on both synthetic and real-world datasets, including a new benchmark for complex multi-part objects, demonstrate that ArtGS achieves state-of-the-art performance in joint parameter estimation and part mesh reconstruction. 
+              Our approach significantly improves reconstruction quality and efficiency, especially for multi-part articulated objects. Additionally, we provide comprehensive analyses of our design choices, validating the effectiveness of each component to highlight potential areas for future improvement.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2502.19459" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/YuLiu-LY/ArtGS" target="_blank">Code</a></div>
+      </aside>
+	  </div>
+	  <br><br>
+    <!-- end ArtGS -->
+
+    <!-- PhyRecon  -->
+	  <div onmouseout="phyrecon_stop()" onmouseover="phyrecon_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+          <div class="one">
+            <div class="two" id="phyrecon_image">
+              <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                <source src="assets/images/phyrecon.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <img src="assets/images/phyrecon.jpg" width="100%">
+          </div>
+          <script type="text/javascript">
+            function phyrecon_start() {
+              document.getElementById('phyrecon_image').style.opacity = "1";
+            }
+
+            function phyrecon_stop() {
+              document.getElementById('phyrecon_image').style.opacity = "0";
+            }
+            phyrecon_stop()
+          </script>
+	  	</div>
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> PhyRecon: Physically Plausible Neural Scene Reconstruction </h2>
+          <!-- <br> -->
+      		<h3 class="sectionContentSubTitle"> 
+            <b>Junfeng Ni*</b>, 
+            <a href="https://yixchen.github.io/" target="_blank" class="nerf_authors_v2">Yixin Chen*</a>, 
+            <a href="" target="_blank" class="nerf_authors_v2">Bohan Jing</a>, 
+            <a href="https://jnnan.github.io/" target="_blank" class="nerf_authors_v2">Nan Jiang</a>, 
+            <a href="https://binwangbfa.github.io/" target="_blank" class="nerf_authors_v2">Bin Wang</a>, 
+            <a href="https://daibopku.github.io/daibo/" target="_blank" class="nerf_authors_v2">Bo Dai</a>, 
+            <a href="https://xiaoyao-li.github.io/" target="_blank" class="nerf_authors_v2">Puhao Li</a>, 
+            <a href="https://yzhu.io/" target="_blank" class="nerf_authors_v2">Yixin Zhu</a>, 
+            <a href="https://zhusongchun.net/" target="_blank" class="nerf_authors_v2">Song-Chun Zhu</a>, 
+            <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang</a>
+	 		    </h3>		
+		  	  <h3 class="sectionContentSubTitle"><em>NeurIPS 2024</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://phyrecon.github.io/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> We address the issue of physical implausibility in multi-view neural reconstruction. 
+              While implicit representations have gained popularity in multi-view 3D reconstrucion, previous work struggles to yield physically plausible results, limiting their utility in domains requiring rigorous physical accuracy. 
+              This lack of plausibility stems from the absence of physics modeling in existing methods and their inability to recover intricate geometrical structures. 
+              In this paper, we introduce PHYRECON, the first approach to leverage both differentiable rendering and differentiable physics simulation to learn implicit surface representations. 
+              PHYRECON features a novel differentiable particle-based physical simulator built on neural implicit representations. 
+              Central to this design is an efficient transformation between SDF-based implicit representations and explicit surface points via our proposed Surface Points Marching Cubes (SP-MC), enabling differentiable learning with both rendering and physical losses. 
+              Additionally, PHYRECON models both rendering and physical uncertainty to identify and compensate for inconsistent and inaccurate monocular geometric priors. The physical uncertainty further facilitates physics-guided pixel sampling to enhance the learning of slender structures. 
+              By integrating these techniques, our model supports differentiable joint modeling of appearance, geometry, and physics. 
+              Extensive experiments demonstrate that PHYRECON significantly improves the reconstruction quality. 
+              Our results also exhibit superior physical stability in physical simulators, with at least a 40% improvement across all datasets, paving the way for future physics-based applications. 
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2404.16666" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/PhyRecon/PhyRecon" target="_blank">Code</a></div>
+      </aside>
+	  </div>
+	  <br><br>
+    <!-- end PhyRecon -->
+
+    <!-- SSR  -->
+	  <div onmouseout="ssr_stop()" onmouseover="ssr_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="ssr_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/SSR.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/SSR.jpg" width="100%">
+        </div>
+        <script type="text/javascript">
+          function ssr_start() {
+            document.getElementById('ssr_image').style.opacity = "1";
+          }
+
+          function ssr_stop() {
+            document.getElementById('ssr_image').style.opacity = "0";
+          }
+          ssr_stop()
+        </script>
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> Single-view 3D Scene Reconstruction with High-fidelity Shape and Texture </h2>
-      		<h3 class="sectionContentSubTitle"> <a href="https://yixchen.github.io/" target="_blank" class="nerf_authors_v2">Yixin Chen*</a> <b>Junfeng Ni*</b>, <a href="https://pku.ai/author/nan-jiang/" target="_blank" class="nerf_authors_v2">Nan Jiang</a>, <a href="" target="_blank" class="nerf_authors_v2">Yaowei Zhang</a>, <a href="https://yzhu.io/" target="_blank" class="nerf_authors_v2">Yixin Zhu</a>, <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang</a>
-	 		</h3>		
-		  	<h3 class="sectionContentSubTitle"><em>3DV 2024
-	 		</em></h3>
+      		<h3 class="sectionContentSubTitle"> 
+            <a href="https://yixchen.github.io/" target="_blank" class="nerf_authors_v2">Yixin Chen*</a> 
+            <b>Junfeng Ni*</b>, 
+            <a href="https://pku.ai/author/nan-jiang/" target="_blank" class="nerf_authors_v2">Nan Jiang</a>, 
+            <a href="" target="_blank" class="nerf_authors_v2">Yaowei Zhang</a>, 
+            <a href="https://yzhu.io/" target="_blank" class="nerf_authors_v2">Yixin Zhu</a>, 
+            <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang</a>
+	 		    </h3>		
+		  	  <h3 class="sectionContentSubTitle"><em>3DV 2024</em></h3>
     	</section>
-		<aside class="externalResourcesNav"  style="margin-top:0%"> 
-		  <div class="dropdown"><span></span><a  href="https://dali-jack.github.io/SSR/" target="_blank">Project Page</a></div>
-		  <div class="dropdown"> <span>Abstract</span>
-			<div class="dropdown-content">
-			  <p style="text-align:left;"> Reconstructing detailed 3D scenes from single-view images remains a challenging task due to limitations in existing approaches, which primarily focus on geometric shape recovery, overlooking object appearances and fine shape details. 
-                To address these challenges, we propose a novel framework for simultaneous high-fidelity recovery of object shapes and textures from single-view images. 
-                Our approach utilizes SSR, Single-view neural implicit Shape and Radiance field representations, leveraging explicit 3D shape supervision and volume rendering of color, depth, and surface normal images. 
-                To overcome shape-appearance ambiguity under partial observations, we introduce a two-stage learning curriculum that incorporates both 3D and 2D supervisions. 
-                A distinctive feature of our framework is its ability to generate fine-grained textured meshes while seamlessly integrating rendering capabilities into the single-view 3D reconstruction model. 
-                This integration enables not only improved textured 3D object reconstruction by 27.7% and 11.6% on the 3D-FRONT and Pix3D datasets, respectively, but also supports the rendering of images from novel viewpoints.
-                Beyond individual objects, our approach facilitates composing object-level representations into flexible scene representations, thereby enabling applications such as holistic scene understanding and 3D scene editing. </p>
-			</div>
-		  </div>
-		  <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2311.00457" target="_blank">Paper</a></div>
-          <div class="dropdown"><span></span><a href="https://github.com/DaLi-Jack/SSR-code" target="_blank">Code</a></div>
-		</aside>
-	 </div>
-	  
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://dali-jack.github.io/SSR/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Reconstructing detailed 3D scenes from single-view images remains a challenging task due to limitations in existing approaches, which primarily focus on geometric shape recovery, overlooking object appearances and fine shape details. 
+                    To address these challenges, we propose a novel framework for simultaneous high-fidelity recovery of object shapes and textures from single-view images. 
+                    Our approach utilizes SSR, Single-view neural implicit Shape and Radiance field representations, leveraging explicit 3D shape supervision and volume rendering of color, depth, and surface normal images. 
+                    To overcome shape-appearance ambiguity under partial observations, we introduce a two-stage learning curriculum that incorporates both 3D and 2D supervisions. 
+                    A distinctive feature of our framework is its ability to generate fine-grained textured meshes while seamlessly integrating rendering capabilities into the single-view 3D reconstruction model. 
+                    This integration enables not only improved textured 3D object reconstruction by 27.7% and 11.6% on the 3D-FRONT and Pix3D datasets, respectively, but also supports the rendering of images from novel viewpoints.
+                    Beyond individual objects, our approach facilitates composing object-level representations into flexible scene representations, thereby enabling applications such as holistic scene understanding and 3D scene editing. 
+              </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2311.00457" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/DaLi-Jack/SSR-code" target="_blank">Code</a></div>
+      </aside>
+	  </div>
 	  <br><br>
+    <!-- end SSR -->
 	
 <!-- Replicate the above Div block to add more title and company details --> 
 	</section>
