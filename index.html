@@ -68,6 +68,63 @@
 
     <hr class="sectionTitleRule2">
 
+    <!-- Trace3D  -->
+	  <div onmouseout="trace3d_stop()" onmouseover="trace3d_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="trace3d_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/trace3d.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/trace3d.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function trace3d_start() {
+            document.getElementById('trace3d_image').style.opacity = "1";
+          }
+
+          function trace3d_stop() {
+            document.getElementById('trace3d_image').style.opacity = "0";
+          }
+          trace3d_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> Trace3D: Consistent Segmentation Lifting via Gaussian Instance Tracing </h2>
+        <!-- <br> -->
+        <h3 class="sectionContentSubTitle"> 
+          <a href="" target="_blank" class="nerf_authors_v2">Hongyu Shen*</a>, 
+          <b>Junfeng Ni*</b>, 
+          <a href="https://yixchen.github.io/" target="_blank" class="nerf_authors_v2">Yixin Chen<sup>✉</sup></a>,
+          <a href="" target="_blank" class="nerf_authors_v2">Weishuo Li</a>,
+          <a href="https://peimingtao.github.io/" target="_blank">Mingtao Pei</a>,
+          <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang<sup>✉</sup></a>
+        </h3>		
+		  	<h3 class="sectionContentSubTitle"><em>ICCV 2025</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://trace-3d.github.io/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> We address the challenge of lifting 2D visual segmentation to 3D in Gaussian Splatting. 
+              Existing methods often suffer from inconsistent 2D masks across viewpoints and produce noisy segmentation boundaries as they neglect these semantic cues to refine the learned Gaussians. 
+              To overcome this, we introduce Gaussian Instance Tracing (GIT), which augments the standard Gaussian representation with an instance weight matrix across input views. 
+              Leveraging the inherent consistency of Gaussians in 3D, we use this matrix to identify and correct 2D segmentation inconsistencies. 
+              Furthermore, since each Gaussian ideally corresponds to a single object, we propose a GIT-guided adaptive density control mechanism to split and prune ambiguous Gaussians during training, resulting in sharper and more coherent 2D and 3D segmentation boundaries. 
+              Experimental results show that our method extracts clean 3D assets and consistently improves 3D segmentation in both online (e.g., self-prompting) and offline (e.g., contrastive lifting) settings, enabling applications such as hierarchical segmentation, object extraction, and scene editing.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/trace-3d/Trace3D" target="_blank">Code</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end Trace3D -->
+
     <!-- TACO  -->
 	  <div onmouseout="taco_stop()" onmouseover="taco_start()">
 	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
@@ -107,7 +164,7 @@
             <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang<sup>✉</sup></a >
           </h3>		
         <!-- <br> -->
-		  	<h3 class="sectionContentSubTitle"><em>arXiv 2025</em></h3>
+		  	<h3 class="sectionContentSubTitle"><em>ICCV 2025</em></h3>
     	</section>
       <br>
       <aside class="externalResourcesNav"  style="margin-top:0%"> 
