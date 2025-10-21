@@ -67,6 +67,190 @@
 
     <hr class="sectionTitleRule2">
 
+    <!-- G4Splat  -->
+	  <div onmouseout="g4splat_stop()" onmouseover="g4splat_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="g4splat_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/g4splat.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/g4splat.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function g4splat_start() {
+            document.getElementById('g4splat_image').style.opacity = "1";
+          }
+
+          function g4splat_stop() {
+            document.getElementById('g4splat_image').style.opacity = "0";
+          }
+          g4splat_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> G4Splat: Geometry-Guided Gaussian Splatting with Generative Prior </h2>
+        <br>
+        <h3 class="sectionContentSubTitle"> 
+          <b>Junfeng Ni</b>, 
+          <a href="https://yixchen.github.io/" target="_blank">Yixin Chen<sup>✉</sup></a>,
+          <a href="" target="_blank">Zhifei Yang</a>,
+          <a href="https://yuliu-ly.github.io/" target="_blank" class="nerf_authors_v2">Yu Liu</a>, 
+          <a href="https://jason-aplp.github.io/Ruijie-Lu/" target="_blank" class="nerf_authors_v2">Ruijie Lu</a>, 
+          <a href="https://zhusongchun.net/" target="_blank" class="nerf_authors_v2">Song-Chun Zhu</a>, 
+          <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang<sup>✉</sup></a>
+        </h3>		
+        <br>
+		  	<h3 class="sectionContentSubTitle"><em>arXiv 2025</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://dali-jack.github.io/g4splat-web/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Despite recent advances in leveraging generative prior from pre-trained diffusion models for 3D scene reconstruction, existing methods still face two critical limitations. 
+              First, due to the lack of reliable geometric supervision, they struggle to produce high-quality reconstructions even in observed regions, let alone in unobserved areas. 
+              Second, they lack effective mechanisms to mitigate multi-view inconsistencies in the generated images, leading to severe shape-appearance ambiguities and degraded scene geometry. 
+              In this paper, we identify accurate geometry as the fundamental prerequisite for effectively exploiting generative models to enhance 3D scene reconstruction. 
+              We first propose to leverage the prevalence of planar structures to derive accurate metric-scale depth maps, providing reliable supervision in both observed and unobserved regions. 
+              Furthermore, we incorporate this geometry guidance throughout the generative pipeline to improve visibility mask estimation, guide novel view selection, and enhance multi-view consistency when inpainting with video diffusion models, resulting in accurate and consistent scene completion. 
+              Extensive experiments on Replica, ScanNet++, and DeepBlending show that our method consistently outperforms existing baselines in both geometry and appearance reconstruction, particularly for unobserved regions. 
+              Moreover, our method naturally supports single-view inputs and unposed videos, with strong generalizability in both indoor and outdoor scenarios with practical real-world applicability.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2510.12099" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/DaLi-Jack/G4Splat" target="_blank">Code</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end G4Splat -->
+
+    <!-- VideoArtGS  -->
+	  <div onmouseout="videoartgs_stop()" onmouseover="videoartgs_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="videoartgs_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/videoartgs.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/videoartgs.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function videoartgs_start() {
+            document.getElementById('videoartgs_image').style.opacity = "1";
+          }
+
+          function videoartgs_stop() {
+            document.getElementById('videoartgs_image').style.opacity = "0";
+          }
+          videoartgs_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> VideoArtGS: Building Digital Twins of Articulated Objects from Monocular Video </h2>
+        <!-- <br> -->
+        <h3 class="sectionContentSubTitle"> 
+          <a href="https://yuliu-ly.github.io/" target="_blank" class="nerf_authors_v2">Yu Liu</a>, 
+          <a href="https://buzz-beater.github.io/" target="_blank" class="nerf_authors_v2">Baoxiong Jia<sup>✉</sup></a>, 
+          <a href="https://jason-aplp.github.io/Ruijie-Lu/" target="_blank" class="nerf_authors_v2">Ruijie Lu</a>, 
+          <a href="" target="_blank" class="nerf_authors_v2">Chuyue Gan</a>, 
+          <a href="" target="_blank" class="nerf_authors_v2">Huayu Chen</a>, 
+          <b>Junfeng Ni</b>, 
+          <a href="https://zhusongchun.net/" target="_blank" class="nerf_authors_v2">Song-Chun Zhu</a>, 
+          <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang<sup>✉</sup></a>
+        </h3>		
+		  	<h3 class="sectionContentSubTitle"><em>arXiv 2025</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://videoartgs.github.io/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Building digital twins of articulated objects from monocular video presents an essential challenge in computer vision, which requires simultaneous reconstruction of object geometry, part segmentation, and articulation parameters from limited viewpoint inputs. 
+              Monocular video offers an attractive input format due to its simplicity and scalability; however, it's challenging to disentangle the object geometry and part dynamics with visual supervision alone, as the joint movement of the camera and parts leads to ill-posed estimation. 
+              While motion priors from pre-trained tracking models can alleviate the issue, how to effectively integrate them for articulation learning remains largely unexplored. 
+              To address this problem, we introduce VideoArtGS, a novel approach that reconstructs high-fidelity digital twins of articulated objects from monocular video. 
+              We propose a motion prior guidance pipeline that analyzes 3D tracks, filters noise, and provides reliable initialization of articulation parameters. 
+              We also design a hybrid center-grid part assignment module for articulation-based deformation fields that captures accurate part motion. 
+              VideoArtGS demonstrates state-of-the-art performance in articulation and mesh reconstruction, reducing the reconstruction error by about two orders of magnitude compared to existing methods. 
+              VideoArtGS enables practical digital twin creation from monocular video, establishing a new benchmark for video-based articulated object reconstruction.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2509.17647" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/YuLiu-LY/VideoArtGS" target="_blank">Code</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end VideoArtGS -->
+
+    <!-- DreamArt  -->
+	  <div onmouseout="dreamart_stop()" onmouseover="dreamart_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="dreamart_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/dreamart.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/dreamart.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function dreamart_start() {
+            document.getElementById('dreamart_image').style.opacity = "1";
+          }
+
+          function dreamart_stop() {
+            document.getElementById('dreamart_image').style.opacity = "0";
+          }
+          dreamart_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> DreamArt: Generating Interactable Articulated Objects from a Single Image </h2>
+        <!-- <br> -->
+        <h3 class="sectionContentSubTitle"> 
+          <a href="https://jason-aplp.github.io/Ruijie-Lu/" target="_blank" class="nerf_authors_v2">Ruijie Lu</a>, 
+          <a href="https://yuliu-ly.github.io/" target="_blank" class="nerf_authors_v2">Yu Liu</a>, 
+          <a href="https://me.kiui.moe/" target="_blank" class="nerf_authors_v2">Jiaxiang Tang</a>, 
+          <b>Junfeng Ni</b>, 
+          <a href="" target="_blank" class="nerf_authors_v2">Yuxiang Wang</a>,
+          <a href="https://github.com/dnvtmf" target="_blank">Diwen Wan</a >,
+            <a href="https://www.cis.pku.edu.cn/info/1177/1378.htm" target="_blank">Gang Zeng<sup>✉</sup></a >,
+          <a href="https://yixchen.github.io/" target="_blank" class="nerf_authors_v2">Yixin Chen<sup>✉</sup></a>,
+          <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang<sup>✉</sup></a>
+        </h3>		
+		  	<h3 class="sectionContentSubTitle"><em>SIGGRAPH Asia 2025</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://dream-art-0.github.io/DreamArt/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Generating articulated objects, such as laptops and microwaves, is a crucial yet challenging task with extensive applications in Embodied AI and AR/VR. 
+              Current image-to-3D methods primarily focus on surface geometry and texture, neglecting part decomposition and articulation modeling. 
+              Meanwhile, neural reconstruction approaches (e.g., NeRF or Gaussian Splatting) rely on dense multi-view or interaction data, limiting their scalability. 
+              In this paper, we introduce DreamArt, a novel framework for generating high-fidelity, interactable articulated assets from single-view images. 
+              DreamArt employs a three-stage pipeline: firstly, it reconstructs part‑segmented and complete 3D object meshes through a combination of image-to-3D generation, mask-prompted 3D segmentation, and part amodal completion. 
+              Second, we fine-tune a video diffusion model to capture part-level articulation priors, leveraging movable part masks as prompt and amodal images to mitigate ambiguities caused by occlusion. 
+              Finally, DreamArt optimizes the articulation motion, represented by a dual quaternion, and conducts global texture refinement and repainting to ensure coherent, high-quality textures across all parts. 
+              Experimental results demonstrate that DreamArt effectively generates high-quality articulated objects, possessing accurate part shape, high appearance fidelity, and plausible articulation, thereby providing a scalable solution for articulated asset generation.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2507.05763" target="_blank">Paper</a></div>
+        <!-- <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div> -->
+      </aside>
+    </div>
+    <br><br>
+    <!-- end DreamArt -->
+
     <!-- Trace3D  -->
 	  <div onmouseout="trace3d_stop()" onmouseover="trace3d_start()">
 	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
