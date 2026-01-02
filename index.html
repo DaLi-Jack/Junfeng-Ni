@@ -189,6 +189,63 @@
     <br><br>
     <!-- end VideoArtGS -->
 
+    <!-- SCaR3D  -->
+	  <div onmouseout="scar3d_stop()" onmouseover="scar3d_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			  <div class="one">
+          <div class="two" id="scar3d_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/scar3d.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/scar3d.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function scar3d_start() {
+            document.getElementById('scar3d_image').style.opacity = "1";
+          }
+
+          function scar3d_stop() {
+            document.getElementById('scar3d_image').style.opacity = "0";
+          }
+          scar3d_stop()
+        </script>
+	  	</div>
+	  	<section class="section2Content">
+        <h2 class="sectionContentTitle"> 3D Scene Change Modeling with Consistent Multi-View Aggregation </h2>
+        <!-- <br> -->
+        <h3 class="sectionContentSubTitle"> 
+          <a href="https://github.com/zr-zhou0o0/" target="_blank" class="nerf_authors_v2">Zirui Zhou</a>, 
+          <b>Junfeng Ni</b>, 
+          <a href="https://hishujie.github.io/" target="_blank" class="nerf_authors_v2">Shujie Zhang</a>, 
+          <a href="https://yixchen.github.io/" target="_blank" class="nerf_authors_v2">Yixin Chen<sup>✉</sup></a>,
+          <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang<sup>✉</sup></a>
+        </h3>		
+		  	<h3 class="sectionContentSubTitle"><em>3DV 2026</em></h3>
+    	</section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%"> 
+        <div class="dropdown"><span></span><a  href="https://zr-zhou0o0.github.io/SCaR3D/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Change detection plays a vital role in scene monitoring, exploration, and continual reconstruction. 
+              Existing 3D change detection methods often exhibit spatial inconsistency in the detected changes and fail to explicitly separate pre- and post-change states. 
+              To address these limitations, we propose SCaR-3D, a novel 3D scene change detection framework that identifies object-level changes from a dense-view pre-change image sequence and sparse-view post-change images. 
+              Our approach consists of a signed-distance–based 2D differencing module followed by multi-view aggregation with voting and pruning; the aggragation strategy leverages the consistent nature of 3DGS and also robustly separates pre- and post-change states. 
+              Based on the detected change regions, we further develop a continual scene reconstruction strategy that selectively updates dynamic regions while preserving the unchanged areas. 
+              We also contribute CCS3D, a challenging synthetic dataset that allows flexible combinations of 3D change types to support controlled evaluations. 
+              Extensive experiments demonstrate that our method achieves both high accuracy and efficiency, outperforming existing methods.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2512.22830" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/zr-zhou0o0/SCaR-3D" target="_blank">Code</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end SCaR3D -->
+
     <!-- DreamArt  -->
 	  <div onmouseout="dreamart_stop()" onmouseover="dreamart_start()">
 	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
