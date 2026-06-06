@@ -80,6 +80,131 @@
 
     <hr class="sectionTitleRule2">
 
+    <!-- SceneVerse++  -->
+    <div onmouseout="svpp_stop()" onmouseover="svpp_start()">
+      <div class="sectionContent" style="padding:0px;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="svpp_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/svpp.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/svpp.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function svpp_start() {
+            document.getElementById('svpp_image').style.opacity = "1";
+          }
+
+          function svpp_stop() {
+            document.getElementById('svpp_image').style.opacity = "0";
+          }
+          svpp_stop()
+        </script>
+      </div>
+      <section class="section2Content">
+        <h2 class="sectionContentTitle"> Lifting Unlabeled Internet-level Data for 3D Scene Understanding </h2>
+        <!-- <br> -->
+        <h3 class="sectionContentSubTitle">
+          <a href="https://yixchen.github.io/" target="_blank" class="nerf_authors_v2">Yixin Chen</a>,
+          <a href="" target="_blank" class="nerf_authors_v2">Yaowei Zhang</a>,
+          <a href="https://scholar.google.com/citations?user=fKRgnIMAAAAJ" target="_blank" class="nerf_authors_v2">Huangyue Yu</a>,
+          <a href="" target="_blank" class="nerf_authors_v2">Junchao He</a>,
+          <a href="" target="_blank" class="nerf_authors_v2">Yan Wang</a>,
+          <a href="https://huangjy-pku.github.io/" target="_blank" class="nerf_authors_v2">Jiangyong Huang</a>,
+          <a href="" target="_blank" class="nerf_authors_v2">Hongyu Shen</a>,
+          <b>Junfeng Ni</b>,
+          <a href="https://taconite.github.io/" target="_blank" class="nerf_authors_v2">Shaofei Wang</a>,
+          <a href="https://buzz-beater.github.io/" target="_blank" class="nerf_authors_v2">Baoxiong Jia</a>,
+          <a href="https://zhusongchun.net/" target="_blank" class="nerf_authors_v2">Song-Chun Zhu</a>,
+          <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang</a>
+        </h3>
+        <br>
+        <h3 class="sectionContentSubTitle"><em>CVPR 2026</em></h3>
+      </section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%">
+        <div class="dropdown"><span></span><a  href="https://sv-pp.github.io/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Annotated 3D scene data is scarce and expensive to acquire, while abundant unlabeled videos are readily available on the internet.
+              In this paper, we demonstrate that carefully designed data engines can leverage web-unlabeled videos to automatically generate training data, facilitating end-to-end models in 3D scene understanding alongside human-annotated datasets.
+              We identify and analyze bottlenecks in automated data generation, revealing critical factors that determine the efficiency and effectiveness of learning from unlabeled data.
+              To validate our approach across different perception granularities, we evaluate on three tasks spanning low-level perception, i.e., 3D object detection and instance segmentation, to high-level reasoning, i.e., 3D spatial Visual Question Answering (VQA) and Vision-Language Navigation (VLN).
+              Models trained on our generated data demonstrate strong zero-shot performance and show further improvement after finetuning.
+              This demonstrates the viability of leveraging readily available web data as a path toward more capable scene understanding systems.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2604.01907" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/sv-pp/SceneVersepp" target="_blank">Code</a></div>
+        <div class="dropdown"><span></span><a href="https://huggingface.co/datasets/bigai/SceneVersepp" target="_blank">Data</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end SceneVerse++ -->
+
+    <!-- NGFF  -->
+    <div onmouseout="ngff_stop()" onmouseover="ngff_start()">
+      <div class="sectionContent" style="padding:0px;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="ngff_image">
+            <video  width="100%" height="100%" muted="" autoplay="" loop="">
+              <source src="assets/images/ngff.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src="assets/images/ngff.png" width="100%">
+        </div>
+        <script type="text/javascript">
+          function ngff_start() {
+            document.getElementById('ngff_image').style.opacity = "1";
+          }
+
+          function ngff_stop() {
+            document.getElementById('ngff_image').style.opacity = "0";
+          }
+          ngff_stop()
+        </script>
+      </div>
+      <section class="section2Content">
+        <h2 class="sectionContentTitle"> Learning Physics-Grounded 4D Dynamics with Neural Gaussian Force Fields </h2>
+        <!-- <br> -->
+        <h3 class="sectionContentSubTitle">
+          <a href="https://lishiqianhugh.github.io/" target="_blank" class="nerf_authors_v2">Shiqian Li*</a>,
+          <a href="https://ruihong04.github.io/" target="_blank" class="nerf_authors_v2">Ruihong Shen*</a>,
+          <b>Junfeng Ni</b>,
+          <a href="https://pku.ai/author/chang-pan/" target="_blank" class="nerf_authors_v2">Chang Pan</a>,
+          <a href="http://wellyzhang.github.io/" target="_blank" class="nerf_authors_v2">Chi Zhang<sup>✉</sup></a>,
+          <a href="https://yzhu.io/" target="_blank" class="nerf_authors_v2">Yixin Zhu<sup>✉</sup></a>
+        </h3>
+        <br>
+        <h3 class="sectionContentSubTitle"><em>ICLR 2026</em></h3>
+      </section>
+      <br>
+      <aside class="externalResourcesNav"  style="margin-top:0%">
+        <div class="dropdown"><span></span><a  href="https://neuralgaussianforcefield.github.io/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+          <div class="dropdown-content">
+            <p style="text-align:left;"> Predicting physical dynamics from visual data remains a fundamental challenge in Artificial Intelligence (AI), as it requires both accurate scene understanding and robust physics reasoning.
+              While recent video generation models achieve impressive visual quality, they lack explicit physics modeling and frequently violate fundamental laws like gravity and object permanence.
+              Existing approaches combining 3D Gaussian splatting with traditional physics engines achieve physical consistency but suffer from prohibitive computational costs and struggle with complex real-world multi-object interactions.
+              The key challenge lies in developing a unified framework that learns physics-grounded representations directly from visual observations while maintaining computational efficiency and generalization capability.
+              Here we introduce Neural Gaussian Force Field (NGFF), an end-to-end neural framework that learns explicit force fields from 3D Gaussian representations to generate interactive, physically realistic 4D videos from multi-view RGB inputs, achieving two orders of magnitude speedup over prior Gaussian simulators.
+              Through explicit force field modeling, NGFF demonstrates superior spatial, temporal, and compositional generalization compared to state-of-the-art (SOTA) methods, including Veo3 and NVIDIA Cosmos, while enabling robust sim-to-real transfer.
+              Comprehensive evaluation on our GSCollision dataset validates NGFF's effectiveness across challenging scenarios.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2602.00148" target="_blank">Paper</a></div>
+        <div class="dropdown"><span></span><a href="https://github.com/lishiqianhugh/NeuralGaussianForceField" target="_blank">Code</a></div>
+        <div class="dropdown"><span></span><a href="https://huggingface.co/datasets/lishiqianhugh/GSCollision" target="_blank">Data</a></div>
+      </aside>
+    </div>
+    <br><br>
+    <!-- end NGFF -->
+
     <!-- G4Splat  -->
 	  <div onmouseout="g4splat_stop()" onmouseover="g4splat_start()">
 	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
