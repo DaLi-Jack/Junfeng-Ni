@@ -37,7 +37,7 @@
         </div>
         <div class="author__urls-wrapper">
           <ul class="author__urls social-icons">
-            <li class="bio-note">Computer vision researcher focusing on 3D reconstruction, generation, and understanding.</li>
+            <li class="bio-note">Computer vision researcher focusing on 3D/4D scene modeling, video generation, and world models.</li>
             <li><a href="mailto:njf23@mails.tsinghua.edu.cn"><img src="assets/images/mail.png" alt="">Email</a></li>
             <li><a href="https://github.com/DaLi-Jack" target="_blank" rel="noopener"><img src="assets/images/github.png" alt="">Github</a></li>
             <li><a href="https://scholar.google.com/citations?user=zOoHsAcAAAAJ&amp;hl=en" target="_blank" rel="noopener"><img src="assets/images/scholar.jpg" alt="">Google Scholar</a></li>
@@ -52,24 +52,45 @@
       <div class="page__inner-wrap">
         <section class="page__content" itemprop="text">
           <p><span class="anchor" id="about-me"></span>
-            Hi! I am a third-year Ph.D. student in the Department of Automation, Tsinghua University, advised by
+            Hi! I am a fourth-year Ph.D. student in the Department of Automation, Tsinghua University, advised by
             <a href="http://web.cs.ucla.edu/~sczhu/" target="_blank" rel="noopener">Prof. Song-Chun Zhu</a>.
             I am also a research intern at Beijing Institute for General Artificial Intelligence (BIGAI), supervised by
             <a href="https://yixchen.github.io/" target="_blank" rel="noopener">Dr. Yixin Chen</a> and
             <a href="https://siyuanhuang.com/" target="_blank" rel="noopener">Dr. Siyuan Huang</a>.
             Before beginning my Ph.D. study, I received my B.S. in the School of Electronic and Information Engineering,
-            Beihang University. My research interests lie in computer vision, especially 3D reconstruction, generation,
-            and understanding. I warmly welcome academic discussions and collaborations!
+            Beihang University. My research interests lie in computer vision, especially 3D/4D scene modeling, video generation, and world models. I warmly welcome academic discussions and collaborations!
           </p>
 
           <h2 id="-news">News</h2>
           <ul class="news-list">
+            <li><em>2026.10</em>: DecomVoxel was released as a SIGGRAPH Asia 2026 - Journal Track (TOG) work on decompositional scene reconstruction with 3D-native priors.</li>
+            <li><em>2026.07</em>: ABot-World-0 was released as a real-time interactive world model running on a single desktop GPU.</li>
             <li><em>2026.04</em>: SceneVerse++ was released as a CVPR 2026 work on lifting internet-level video data for 3D scene understanding.</li>
             <li><em>2026.02</em>: Neural Gaussian Force Fields was released as an ICLR 2026 work on physics-grounded 4D dynamics.</li>
             <li><em>2025.10</em>: G4Splat was released as an ICLR 2026 work on geometry-guided Gaussian splatting.</li>
           </ul>
 
           <h2 id="-preprints">Preprints</h2>
+          <div class="paper-box">
+            <div class="paper-box-image">
+              <div>
+                <div class="badge bg-muted">Tech Report 2026</div>
+                <img src="https://raw.githubusercontent.com/amap-cvlab/ABot-World/main/assets/gifs/ABot-World-0.gif" alt="ABot-World-0 preview">
+              </div>
+            </div>
+            <div class="paper-box-text">
+              <p><strong>ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU</strong><br>
+                ABot-World Team
+              </p>
+              <p><a href="https://amap-cvlab.github.io/ABot-World/" target="_blank" rel="noopener"><strong>Project</strong></a> /
+                <a href="https://arxiv.org/abs/2607.19191" target="_blank" rel="noopener"><strong>Paper</strong></a> /
+                <a href="https://github.com/amap-cvlab/ABot-World" target="_blank" rel="noopener"><strong>Code</strong></a> /
+                <a href="https://huggingface.co/acvlab/ABot-World-0-5B-LF" target="_blank" rel="noopener"><strong>Model</strong></a>
+              </p>
+              <p>Enables real-time, long-horizon, action-conditioned world rollout on a single desktop GPU.</p>
+            </div>
+          </div>
+
           <div class="paper-box">
             <div class="paper-box-image">
               <div>
@@ -102,6 +123,33 @@
           </div>
 
           <h2 id="-publications">Publications</h2>
+
+          <div class="paper-box paper-box-highlight">
+            <div class="paper-box-image">
+              <div>
+                <div class="badge bg-danger">TOG 2026</div>
+                <img src="https://decomvoxel.github.io/DecomVoxel-Webpage/figures/1-teaser-crop.png" alt="DecomVoxel preview">
+              </div>
+            </div>
+            <div class="paper-box-text">
+              <p><strong>DecomVoxel: Harnessing 3D-Native Priors with Guided In-situ Denoising Optimization for Decompositional Scene Reconstruction</strong><br>
+                <strong>Junfeng Ni*</strong>,
+                <a href="https://github.com/zr-zhou0o0" target="_blank" rel="noopener">Zirui Zhou*</a>,
+                <a href="https://yixchen.github.io/" target="_blank" rel="noopener">Yixin Chen<sup>✉</sup></a>,
+                <a href="https://yuliu-ly.github.io/" target="_blank" rel="noopener">Yu Liu</a>,
+                <a href="https://jnnan.github.io/" target="_blank" rel="noopener">Nan Jiang</a>,
+                <a href="https://github.com/isxiaohe/" target="_blank" rel="noopener">Zhifei Yang</a>,
+                <a href="https://zhusongchun.net/" target="_blank" rel="noopener">Song-Chun Zhu</a>,
+                <a href="https://siyuanhuang.com/" target="_blank" rel="noopener">Siyuan Huang<sup>✉</sup></a>
+              </p>
+              <p><a href="https://decomvoxel.github.io/DecomVoxel-Webpage/" target="_blank" rel="noopener"><strong>Project</strong></a> /
+                <a href="https://arxiv.org/abs/2610.01914" target="_blank" rel="noopener"><strong>Paper</strong></a> /
+                <a href="https://github.com/DecomVoxel/DecomVoxel" target="_blank" rel="noopener"><strong>Code</strong></a> /
+                <a href="https://huggingface.co/datasets/JunfengNi/DecomVoxel" target="_blank" rel="noopener"><strong>Data</strong></a>
+              </p>
+              <p>Uses guided in-situ denoising with 3D-native priors to reconstruct complete, editable scenes while preserving their spatial layouts.</p>
+            </div>
+          </div>
 
           <div class="paper-box">
             <div class="paper-box-image">
