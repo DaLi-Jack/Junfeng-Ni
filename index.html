@@ -63,6 +63,7 @@
 
           <h2 id="-news">News</h2>
           <ul class="news-list">
+            <li><em>2026.10</em>: GAD, LongForcing, and OneLA were released as preprints, covering consistent video generation, long-horizon world rollout, and shared latent actions for world models.</li>
             <li><em>2026.10</em>: DecomVoxel was released as a SIGGRAPH Asia 2026 - Journal Track (TOG) work on decompositional scene reconstruction with 3D-native priors.</li>
             <li><em>2026.07</em>: ABot-World-0 was released as a real-time interactive world model running on a single desktop GPU.</li>
             <li><em>2026.04</em>: SceneVerse++ was released as a CVPR 2026 work on lifting internet-level video data for 3D scene understanding.</li>
@@ -71,6 +72,31 @@
           </ul>
 
           <h2 id="-preprints">Preprints</h2>
+          <div class="paper-box paper-box-highlight">
+            <div class="paper-box-image">
+              <div>
+                <div class="badge bg-muted">arXiv 2026</div>
+                <img src="assets/images/gad.webp" alt="GAD video generation comparison">
+              </div>
+            </div>
+            <div class="paper-box-text">
+              <p><strong>GAD: Geometry Attention Distillation for Consistent Video Generation</strong><br>
+                <strong>Junfeng Ni*</strong>,
+                Ziyu Zhu*,
+                Fan Jiang*<sup>✉</sup>,
+                <a href="https://yuliu-ly.github.io/" target="_blank" rel="noopener">Yu Liu</a>,
+                Chiyu Wang, Jiawei Zhang, Zhaoxu Sun, Mu Xu,
+                <a href="https://siyuanhuang.com/" target="_blank" rel="noopener">Siyuan Huang<sup>✉</sup></a>,
+                <a href="https://yixchen.github.io/" target="_blank" rel="noopener">Yixin Chen<sup>✉</sup></a>
+              </p>
+              <p><a href="https://fantasy-amap.github.io/GAD/" target="_blank" rel="noopener"><strong>Project</strong></a> /
+                <a href="https://arxiv.org/abs/2610.18779" target="_blank" rel="noopener"><strong>Paper</strong></a> /
+                <a href="https://github.com/Fantasy-AMAP/GAD" target="_blank" rel="noopener"><strong>Code</strong></a>
+              </p>
+              <p>Distills geometric correspondences into video attention to improve scene and object consistency without adding inference modules.</p>
+            </div>
+          </div>
+
           <div class="paper-box">
             <div class="paper-box-image">
               <div>
@@ -88,6 +114,42 @@
                 <a href="https://huggingface.co/acvlab/ABot-World-0-5B-LF" target="_blank" rel="noopener"><strong>Model</strong></a>
               </p>
               <p>Enables real-time, long-horizon, action-conditioned world rollout on a single desktop GPU.</p>
+            </div>
+          </div>
+
+          <div class="paper-box">
+            <div class="paper-box-image">
+              <div>
+                <div class="badge bg-muted">arXiv 2026</div>
+                <img src="assets/images/longforcing.png" alt="LongForcing long-horizon world rollout examples">
+              </div>
+            </div>
+            <div class="paper-box-text">
+              <p><strong>LongForcing: Scaling Temporal Manifold Matching for Long-Horizon World Rollout</strong><br>
+                Ziyu Zhu*, Zhaoxu Sun*, Fan Jiang*, Mengchao Wang*,
+                <strong>Junfeng Ni</strong>, Ting-Bing Xu, Zhicheng Liu, Mu Xu
+              </p>
+              <p><a href="https://fantasy-amap.github.io/LongForcing/" target="_blank" rel="noopener"><strong>Project</strong></a> /
+                <a href="https://arxiv.org/abs/2610.18289" target="_blank" rel="noopener"><strong>Paper</strong></a>
+              </p>
+              <p>Extends teacher supervision over longer self-generated rollouts to reduce drift in long-horizon video world models.</p>
+            </div>
+          </div>
+
+          <div class="paper-box">
+            <div class="paper-box-image">
+              <div>
+                <div class="badge bg-muted">arXiv 2026</div>
+                <img src="assets/images/onela.png" alt="OneLA shared latent action interface across worlds">
+              </div>
+            </div>
+            <div class="paper-box-text">
+              <p><strong>OneLA: Learning Many Worlds from Latent Actions</strong><br>
+                Ziyu Zhu, Zhaoxu Sun, Fan Jiang, Chiyu Wang,
+                <strong>Junfeng Ni</strong>, Mu Xu
+              </p>
+              <p><a href="https://arxiv.org/abs/2610.20160" target="_blank" rel="noopener"><strong>Paper</strong></a></p>
+              <p>Learns a shared latent action interface from videos to support controllable world models across diverse domains.</p>
             </div>
           </div>
 
